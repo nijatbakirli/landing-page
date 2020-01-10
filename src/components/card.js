@@ -2,7 +2,7 @@ import React from "react";
 import activateImage from "../images/Activate.png";
 import PropTypes from "prop-types";
 
-const Card = ({mode, imgPath}) => (
+const Card = ({mode, imgPath, title, description}) => (
   <div
     className="card"
     style={{
@@ -31,7 +31,7 @@ const Card = ({mode, imgPath}) => (
         marginBottom: "10px"
       }}
     >
-      {props.title}
+      {title}
     </h1>
     <p
       style={{
@@ -42,7 +42,7 @@ const Card = ({mode, imgPath}) => (
         letterSpacing: "0px"
       }}
     >
-      {props.description}
+      {description}
     </p>
   </div>
 );
@@ -50,7 +50,9 @@ const Card = ({mode, imgPath}) => (
 
 Card.propTypes = {
   mode: PropTypes.bool,
-  imgPath: PropTypes.string
+  imgPath: PropTypes.string,
+  title: PropTypes.string,
+  description: PropTypes.string
 };
 
 export default Card;
