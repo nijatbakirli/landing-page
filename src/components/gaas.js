@@ -60,7 +60,7 @@ const Gaas = () => (
           flexWrap: "wrap"
         }}
       >
-        <Card
+        {/* <Card
           svgPath={svgCompass}
           title={`Strategize & 
             Guided Scoping.`}
@@ -84,7 +84,7 @@ const Gaas = () => (
           svgPath={svgChart}
           title="Retain."
           description="You've worked so hard to gain users, let's work together to make sure they stick around."
-        />
+        /> */}
       </div>
     </div>
   </div>
