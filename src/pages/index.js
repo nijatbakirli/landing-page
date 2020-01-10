@@ -4,7 +4,6 @@ import Layout from "../components/layout";
 import Header from "../components/header";
 import Gaas from "../components/gaas";
 import Text from "../components/text";
-import SliderForm from "../components/slideForm";
 import CallToAction from "../components/cts";
 import Footer from "../components/footer";
 import Case1 from "../components/case1";
@@ -30,7 +29,7 @@ const IndexPage = ({ data }) => (
       className="section4"
       style={{ background: `url(${shapeImage})`, backgroundSize: "cover", backgroundPositionX: "center", backgroundPositionY: "bottom" }}
     >
-      <Case1 />
+      {/* <Case1 /> */}
     </div>
     <div className="section5" style={{ background: "#92D6D0" }}>
       <Case2 />
