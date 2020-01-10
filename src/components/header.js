@@ -2,6 +2,7 @@ import React from "react";
 
 import Button from "./button";
 import { scroller } from "react-scroll";
+import "../styles/header.css"
 
 const Header = () => {
   function handleClick(e) {
@@ -57,7 +58,7 @@ const Header = () => {
       </div>
       <p style={{ flex: 1 }} />
       <p className="main">
-        <p style={{ marginBottom: "10px" }}>
+        <p style={{ marginBottom: "10px"}}>
           <strong>We are the allies of</strong> those
         </p>
         <p style={{ marginBottom: "10px" }}>

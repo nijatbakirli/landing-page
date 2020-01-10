@@ -2,21 +2,10 @@ import React from "react"
 
 const SectionHeader = ({ title, description }) => (
   <>
-    <h2
-      style={{
-        maxWidth: "742px",
-        fontFamily: ".SFNSDisplay",
-        fontSize: "72px",
-        color: "#1C215D",
-        letterSpacing: "1px",
-        textAlign: "center",
-        lineHeight: "80px",
-        marginLeft: "auto",
-        marginRight: "auto",
-      }}
-    >
+    <p className="cts_title">
       {title}
-    </h2>
+    </p>
+    
     <p style={{
         maxWidth: "742px",
         fontFamily: ".SFNSDisplay",

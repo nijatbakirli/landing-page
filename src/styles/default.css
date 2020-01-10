@@ -520,6 +520,30 @@ p.case_title {
   min-width: 222px;
 }
 
+p.cts_title {
+  max-width: 742px;
+  font-family: SFNSDisplay;
+  font-size: 72px;
+  color: #1C215D;
+  letter-spacing: 1px;
+  text-align: center;
+  line-height: 80px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+p.cts_description {
+  max-width: 742px;
+  font-family: SFNSDisplay;
+  font-size: 24px;
+  color: #1C215D;
+  letter-spacing: -0.5px;
+  text-align: center;
+  line-height: 56px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 h1 {
   font-size: 48px;
 }
@@ -535,15 +559,15 @@ h1 {
     width: 95%;
   }
   p.main {
-    font-size: 36px;
+    font-size: 24px;
   }
   p.gaas_main {
-    font-size: 64px;
+    font-size: 40px;
     margin-bottom: 10px;
   }
   p.gaas_header {
-    font-size: 30px;
-    line-height: 40px;
+    font-size: 24px;
+    line-height: 30px;
   }
 
   p.gaas_footer {
@@ -554,10 +578,16 @@ h1 {
     font-size: 30px;
   }
   p.text_main {
-    font-size: 3rem;
+    font-size: 2rem;
+    line-height: 40px;
   }
 
   p.case_title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  p.cts_title {
     font-size: 30px;
     line-height: 40px;
   }
