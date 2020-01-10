@@ -1,13 +1,11 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
-import { Link } from "gatsby";
 import { StaticQuery, graphql } from "gatsby";
 import { HelmetDatoCms } from "gatsby-source-datocms";
 
-import "../styles/index.sass";
+import "../styles/default.css"
 
 const TemplateWrapper = ({ children }) => {
-  const [showMenu, setShowMenu] = useState(false);
   return (
     <StaticQuery
       query={graphql`
