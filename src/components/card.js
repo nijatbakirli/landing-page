@@ -1,8 +1,7 @@
 import React from "react";
 import activateImage from "../images/Activate.png";
-import PropTypes from "prop-types";
 
-const Card = ({mode, imgPath, title, description}) => (
+const Card = props => (
   <div
     className="card"
     style={{
@@ -12,7 +11,7 @@ const Card = ({mode, imgPath, title, description}) => (
       padding: "12px 20px",
       width: "255px",
       height: "328px",
-      background: mode ? `url(${activateImage})` : "#FFFFFF",
+      background: props.back_image ? `url(${activateImage})` : "#FFFFFF",
       backgroundRepeat: "no-repeat",
       borderRadius: "10px",
       marginBottom: "10px",
@@ -20,7 +19,7 @@ const Card = ({mode, imgPath, title, description}) => (
     }}
   >
     {/* <img
-      src={imgPath} alt="No image" 
+      src={props.svgPath}
       style={{ width: "52px", height: "52px", marginBottom: "10px" }}
     /> */}
     <h1
@@ -31,7 +30,7 @@ const Card = ({mode, imgPath, title, description}) => (
         marginBottom: "10px"
       }}
     >
-      {title}
+      {props.title}
     </h1>
     <p
       style={{
@@ -42,17 +41,9 @@ const Card = ({mode, imgPath, title, description}) => (
         letterSpacing: "0px"
       }}
     >
-      {description}
+      {props.description}
     </p>
   </div>
 );
-
-
-Card.propTypes = {
-  mode: PropTypes.bool,
-  imgPath: PropTypes.string,
-  title: PropTypes.string,
-  description: PropTypes.string
-};
 
 export default Card;
