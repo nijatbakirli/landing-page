@@ -19,10 +19,10 @@ const Card = ({mode, imgPath, title, description}) => (
       minWidth: "255px"
     }}
   >
-    <img
+    {/* <img
       src={imgPath} alt="No image" 
       style={{ width: "52px", height: "52px", marginBottom: "10px" }}
-    />
+    /> */}
     <h1
       style={{
         fontSize: "24px",
