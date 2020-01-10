@@ -48,7 +48,7 @@ const TemplateWrapper = ({ children }) => {
           />
 
           <div className="container__body">
-            {children}
+            {{children}}
           </div>
         </div>
       )}
