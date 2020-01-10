@@ -1,7 +1,7 @@
 import React from "react";
 import Card from "./card";
 import svgCompass from "../images/Stockholm-icons/Tools/Compass.svg";
-import svgChart from "../images/Stockholm-icons/Shopping/chart-line.svg";
+import svgChart from "../images/Stockholm-icons/Shopping/Chart.svg";
 import svgSending from "../images/Stockholm-icons/Communication/Sending.svg";
 import svgFire from "../images/Stockholm-icons/General/Fire.svg";
 
