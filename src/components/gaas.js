@@ -1,5 +1,5 @@
 import React from "react";
-import Card from "./card";
+// import Card from "./card";
 // import svgCompass from "../images/Stockholm-icons/Tools/Compass.svg";
 // import svgChart from "../images/Stockholm-icons/Shopping/chart-line#1.svg";
 // import svgSending from "../images/Stockholm-icons/Communication/Sending.svg";
