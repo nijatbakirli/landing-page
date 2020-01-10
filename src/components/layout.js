@@ -6,6 +6,7 @@ import { HelmetDatoCms } from "gatsby-source-datocms";
 import "../styles/default.css"
 
 const TemplateWrapper = ({ children }) => {
+
   return (
     <StaticQuery
       query={graphql`
@@ -40,7 +41,7 @@ const TemplateWrapper = ({ children }) => {
         }
       `}
       render={data => (
-        <div className={`container ${showMenu ? "is-open" : ""}`}>
+        <div >
           <HelmetDatoCms
             favicon={data.datoCmsSite.faviconMetaTags}
             seo={data.datoCmsHome.seoMetaTags}
