@@ -19,7 +19,7 @@ const Card = props => (
     }}
   >
     <img
-      alt={""}
+      alt={"No image"}
       src={`url(${props.svgPath})`}
       style={{ width: "52px", height: "52px", marginBottom: "10px" }}
     />
