@@ -1,7 +1,7 @@
 import React from "react";
 
 import Button from "./button";
-import {Element, scroller} from "react-scroll";
+import {scroller} from "react-scroll";
 
 const Header = () => {
   function handleClick(e) {
