@@ -1,4 +1,6 @@
-import React from "react"
+import React from "react";
+import lineImage from "../images/Line2.png";
+import phoneVideoImage from "../images/PhoneVideo.png";
 
 const Case2 = () => (
   <div
@@ -7,31 +9,46 @@ const Case2 = () => (
       display: "flex",
       alignItems: "left",
       flexDirection: "column",
-      padding: "80px 10px",
+      padding: "80px 0px",
       minHeight: "100vh",
+      // justifyContent: "space-between"
     }}
   >
-    <h1
-      style={{
-        fontFamily: ".SFNSDisplay",
-        fontSize: "48px",
-        color: "#1C215D",
-        letterSpacing: "-1.33px",
-      }}
-    >
+    <p className="case_title" style={{ color: "#1C215D" }}>
       02. Reimagining online shopping in China
-    </h1>
-    <h2
+    </p>
+
+    <a
+      href="/case2"
       style={{
         fontFamily: ".SFNSDisplay",
         fontSize: "24px",
         color: "#1C215D",
-        letterSpacing: "-0.67px",
+        letterSpacing: "-0.67px"
       }}
     >
-      Explore this case
-    </h2>
+      <div style={{ display: "flex", alignItems: "center" }}>
+        <p style={{ marginRight: "10px" }}>Explore this case</p>
+        <img
+          alt={"No image"}
+          src={lineImage}
+          style={{ width: "28px", height: "14px" }}
+        />
+      </div>
+    </a>
+    <div>
+      {/* <div
+        style={{
+          display: "flex",
+          alignItems: "left",
+          padding: "80px 0px",
+          justifyContent: "space-between"
+        }}
+      >
+        <div style={{ background: `url(${phoneVideoImage})`, width: "470px", height: "675px" }}></div>
+      </div> */}
+    </div>
   </div>
-)
+);
 
-export default Case2
+export default Case2;

@@ -40,9 +40,17 @@ template {
   display: none;
 }
 a {
-  background-color: transparent;
-  -webkit-text-decoration-skip: objects;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-family: AppleSystemUIFont;
+  font-size: 16px;
+  letter-spacing: -0.2px;
 }
+
+a:hover {
+  color: blue;
+}
+
 a:active,
 a:hover {
   outline-width: 0;
@@ -60,10 +68,6 @@ strong {
 dfn {
   font-style: italic;
 }
-/* h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-} */
 
 mark {
   background-color: #ff0;
@@ -447,7 +451,7 @@ li > p {
 }
 
 .landing2 {
-  width: 85%;
+  width: 80%;
   margin: auto;
 }
 
@@ -458,7 +462,7 @@ nav a {
   text-decoration: none;
   font-family: AppleSystemUIFont;
   font-size: 16px;
-  color: #1C215D;
+  color: #1c215d;
   letter-spacing: -0.2px;
 }
 
@@ -470,6 +474,9 @@ p.main {
   font-size: 4em;
   line-height: 1em;
   margin: 0.67em 0;
+  min-width: 888px;
+  max-width: 888px;
+  color: #1C215D;
 }
 
 p.text_main {
@@ -478,6 +485,43 @@ p.text_main {
   text-align: center;
   line-height: 82px;
   margin-top: 20px;
+  min-width: 222px;
+}
+
+p.gaas_main {
+  font-size: 108px;
+  color: #FFFFFF;
+  letter-spacing: -2.78px;
+  min-width: 375px;
+  margin-bottom: 30px;
+}
+
+p.gaas_header {
+  font-size: 48px;
+  color: #FFFFFF;
+  letter-spacing: -1.19px;
+  line-height: 80px;
+  min-width: 222px;
+}
+
+p.gaas_footer {
+  font-size: 40px;
+  color: #FFFFFF;
+  letter-spacing: -1.11px;
+  line-height: 40px;
+  min-width: 222px;
+}
+
+p.case_title {
+  font-family: SFNSDisplay;
+  font-size: 48px;
+  letter-spacing: -1.33px;
+  line-height: 60px;
+  min-width: 222px;
+}
+
+h1 {
+  font-size: 48px;
 }
 
 @media only screen and (max-width: 800px) {
@@ -485,15 +529,36 @@ p.text_main {
     font-size: 100%;
   }
   .landing1 {
-    width: 100%;
+    width: 95%;
   }
   .landing2 {
-    width: 100%;
+    width: 95%;
   }
   p.main {
-    font-size: 3rem;
+    font-size: 36px;
+  }
+  p.gaas_main {
+    font-size: 64px;
+    margin-bottom: 10px;
+  }
+  p.gaas_header {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  p.gaas_footer {
+    font-size: 24px;
+  }
+
+  h1 {
+    font-size: 30px;
   }
   p.text_main {
     font-size: 3rem;
+  }
+
+  p.case_title {
+    font-size: 30px;
+    line-height: 40px;
   }
 }

@@ -4,6 +4,7 @@ import { StaticQuery, graphql } from "gatsby";
 import { HelmetDatoCms } from "gatsby-source-datocms";
 
 import "../styles/default.css"
+import "../styles/case1.css"
 
 const TemplateWrapper = ({ children }) => {
 

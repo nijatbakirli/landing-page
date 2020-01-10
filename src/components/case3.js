@@ -1,4 +1,5 @@
-import React from "react"
+import React from "react";
+import lineImage from "../images/Line.png";
 
 const Case3 = () => (
   <div
@@ -8,31 +9,34 @@ const Case3 = () => (
       alignItems: "left",
       flexDirection: "column",
       padding: "80px 10px",
-      minHeight: "100vh",
+      minHeight: "100vh"
     }}
   >
-    <h1
-      style={{
-        fontFamily: ".SFNSDisplay",
-        fontSize: "48px",
-        color: "#FFFFFF",
-        letterSpacing: "-1.33px",
-      }}
-    >
-      03. Building shared economy models<br />
+    <p className="case_title" style={{ color: "#FFFFFF" }}>
+      03. Building shared economy models
+      <br />
       for creative souls
-    </h1>
-    <h2
+    </p>
+
+    <a
+      href="/case3"
       style={{
         fontFamily: ".SFNSDisplay",
         fontSize: "24px",
         color: "#FFFFFF",
-        letterSpacing: "-0.67px",
+        letterSpacing: "-0.67px"
       }}
     >
-      Explore this case
-    </h2>
+      <div style={{ display: "flex", alignItems: "center" }}>
+        <p style={{ marginRight: "10px" }}>Explore this case</p>
+        <img
+          alt={"No image"}
+          src={lineImage}
+          style={{ width: "28px", height: "14px" }}
+        />
+      </div>
+    </a>
   </div>
-)
+);
 
-export default Case3
+export default Case3;

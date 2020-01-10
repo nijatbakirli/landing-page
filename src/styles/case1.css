@@ -1,0 +1,16 @@
+body {
+    overflow-x: hidden;
+}
+
+.floating-image {
+    position: absolute;
+    height: auto;
+    margin-bottom: 0px;
+    bottom: -1px;
+}
+
+@media only screen and (max-width: 800px) {
+    .floating-image {
+        display: none;
+    }
+}

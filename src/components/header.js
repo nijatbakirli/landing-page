@@ -1,15 +1,15 @@
 import React from "react";
 
 import Button from "./button";
-import {scroller} from "react-scroll";
+import { scroller } from "react-scroll";
 
 const Header = () => {
   function handleClick(e) {
-    scroller.scrollTo('ElementSection2', {
+    scroller.scrollTo("ElementSection2", {
       duration: 300,
       delay: 100,
-      smooth: true,
-    })
+      smooth: true
+    });
   }
 
   return (
@@ -20,7 +20,8 @@ const Header = () => {
         alignItems: "left",
         flexDirection: "column",
         padding: "50px 10px",
-        minHeight: "100vh"
+        minHeight: "100vh",
+        minWidth: "222px"
       }}
     >
       <div>
@@ -55,9 +56,14 @@ const Header = () => {
         </div>
       </div>
       <p style={{ flex: 1 }} />
-      <p className="main" style={{ maxWidth: 888, color: "#1C215D" }}>
-        <strong>We are the allies of</strong> those who aspire to{" "}
-        <strong>change</strong> the world we live in.
+      <p className="main">
+        <p style={{ marginBottom: "10px" }}>
+          <strong>We are the allies of</strong> those
+        </p>
+        <p style={{ marginBottom: "10px" }}>
+          who aspire to <strong>change</strong> the
+        </p>
+        <p style={{ marginBottom: "10px" }}>world we live in.</p>
       </p>
       <p
         style={{
@@ -65,7 +71,8 @@ const Header = () => {
           fontSize: `20px`,
           color: `#1C215D`,
           letterSpacing: `0px`,
-          lineHeight: `30px`
+          lineHeight: `30px`,
+          minWidth: `222px`
         }}
       >
         Our mission is to help our partners in their road to success.

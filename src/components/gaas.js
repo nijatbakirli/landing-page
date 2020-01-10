@@ -16,47 +16,22 @@ const Gaas = () => (
       minHeight: "100vh"
     }}
   >
-    <h1
-      style={{
-        fontSize: "48px",
-        color: "#FFFFFF",
-        letterSpacing: "-1.19px",
-        lineHeight: "80px"
-      }}
-    >
+    <p className="gaas_header">
       We do things a bit different.
       <br />
       We focus on value.
-    </h1>
+    </p>
     <p style={{ flex: 1 }} />
     <div>
-      <h1
-        style={{
-          fontSize: "108px",
-          color: "#FFFFFF",
-          letterSpacing: "-2.78px",
-          minWidth: "375px"
-        }}
-      >
-        GaaS
-      </h1>
-      <h1
-        style={{
-          fontSize: "40px",
-          color: "#FFFFFF",
-          letterSpacing: "-1.11px",
-          lineHeight: "40px"
-        }}
-      >
-        Growth as a Service
-      </h1>
+      <p className="gaas_main">GaaS</p>
+      <p className="gaas_footer">Growth as a Service</p>
     </div>
     <div>
       <div
         style={{
           display: "flex",
           flexDirection: "row",
-          justifyContent: "space-around",
+          justifyContent: "space-between",
           flexWrap: "wrap"
         }}
       >
