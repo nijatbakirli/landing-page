@@ -5,21 +5,13 @@ const Card = props => (
   <div
     className="card"
     style={{
-      display: "flex",
-      alignItems: "left",
-      flexDirection: "column",
-      padding: "12px 20px",
-      width: "255px",
-      height: "328px",
-      background: props.back_image ? `url(${activateImage})` : "#FFFFFF",
-      backgroundRepeat: "no-repeat",
-      borderRadius: "10px",
-      marginBottom: "10px",
-      minWidth: "255px"
+      background: props.back_image ? `#FFFFFF url(${activateImage}) no-repeat` : "#FFFFFF",
+      backgroundSize: "cover",
+      backgroundPositionY: "bottom",
     }}
   >
     <img
-      alt={"No image"}
+      alt=""
       src={props.svgPath}
       style={{ width: "52px", height: "52px", marginBottom: "10px" }}
     />

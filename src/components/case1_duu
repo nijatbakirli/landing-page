@@ -40,7 +40,6 @@ const Case1 = () => {
             <div style={{ display: "flex", alignItems: "center" }}>
               <p style={{ marginRight: "10px" }}>Explore this case</p>
               <img
-                alt={"No image"}
                 src={lineImage}
                 style={{ width: "28px", height: "14px" }}
               />

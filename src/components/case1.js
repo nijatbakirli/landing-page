@@ -27,28 +27,24 @@ const Case1 = () => {
             <br />
             agriculture
           </p>
-
-          <a
-            href="/case1"
-            style={{
-              fontFamily: ".SFNSDisplay",
-              fontSize: "24px",
-              color: "#FFFFFF",
-              letterSpacing: "-0.67px"
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center" }}>
-              <p style={{ marginRight: "10px" }}>Explore this case</p>
+          <a href="/case1">
+            <p className="icon_text" style={{ color: "#FFFFFF" }}>
+              Explore this case
               <img
-                alt={"No image"}
+                alt=""
                 src={lineImage}
-                style={{ width: "28px", height: "14px" }}
+                style={{
+                  marginBottom: "0px",
+                  marginTop: "5px",
+                  marginLeft: "10px"
+                }}
               />
-            </div>
+            </p>
           </a>
         </div>
       </div>
       <img
+        alt=""
         src={iPhoneImage}
         id="iPhoneImg"
         className="floating-image"
@@ -61,40 +57,26 @@ const Case1 = () => {
 };
 
 const useIPhoneLeft = id => {
-  const [iPhoneLeft, setIPhoneLeft] = useState(window.clientWidth);
-  const windowWidth = useWindowWidth();
+  const [iPhoneLeft, setIPhoneLeft] = useState(3000);
   const rect = useRect("landing1");
 
   useEffect(() => {
     let dom = document.getElementById(id);
-    console.log(windowWidth, dom.clientWidth, rect.y);
-    setIPhoneLeft(windowWidth - dom.clientWidth + Math.max(rect.y, 0));
-  });
+    setIPhoneLeft(window.innerWidth - dom.clientWidth + Math.max(rect.y, 0));
+  }, [id, rect]);
 
   return iPhoneLeft;
-};
-
-const useWindowWidth = () => {
-  const [width, setWidth] = useState(window.innerWidth);
-  useEffect(() => {
-    const handleResize = () => setWidth(window.innerWidth);
-    window.addEventListener("resize", handleResize);
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  });
-  return width;
 };
 
 const useRect = id => {
   const [rect, setRect] = useState({
     x: 0,
     y: 0,
-    width: window.innerWidth,
-    height: window.innerHeight,
+    width: 3000,
+    height: 3000,
     top: 0,
-    right: window.innerWidth,
-    bottom: window.innerHeight,
+    right: 3000,
+    bottom: 3000,
     left: 0
   });
   useEffect(() => {

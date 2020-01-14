@@ -2,7 +2,7 @@ import React from "react";
 
 import Button from "./button";
 import { scroller } from "react-scroll";
-import "../styles/header.css"
+import "../styles/header.css";
 
 const Header = () => {
   function handleClick(e) {
@@ -57,25 +57,29 @@ const Header = () => {
         </div>
       </div>
       <p style={{ flex: 1 }} />
-      <p className="main">
-        <p style={{ marginBottom: "10px"}}>
-          <strong>We are the allies of</strong> those
-        </p>
-        <p style={{ marginBottom: "10px" }}>
-          who aspire to <strong>change</strong> the
-        </p>
-        <p style={{ marginBottom: "10px" }}>world we live in.</p>
-      </p>
-      <p
-        style={{
-          opacity: 0.6,
-          fontSize: `20px`,
-          color: `#1C215D`,
-          letterSpacing: `0px`,
-          lineHeight: `30px`,
-          minWidth: `222px`
-        }}
+      <div
+        className="main"
+        style={{ color: "#1C215D", height: "3em", position: "relative" }}
       >
+        <div className="fragment" id="header_fragment1">
+          <strong>We are the allies of</strong> those
+          <br />
+          who aspire to <strong>change</strong> the
+          <br />
+          world we live in.
+        </div>
+        <div className="fragment" id="header_fragment2">
+          We <strong>craft</strong> digital
+          <br />
+          experiences.
+        </div>
+        <div className="fragment" id="header_fragment3">
+          We make your business
+          <br />
+          <strong>grow.</strong>
+        </div>
+      </div>
+      <p className="undertext">
         Our mission is to help our partners in their road to success.
       </p>
       <Button

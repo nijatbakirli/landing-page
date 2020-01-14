@@ -15,7 +15,7 @@ const CallToAction = () => (
       title="Wanna build the future together?"
       description="We love to work with people who want to"
     />
-    <Button background="#1B215D" width="349px" height="61px">
+    <Button background="#1B215D" width="249px" height="61px">
       Get In touch
     </Button>
   </div>

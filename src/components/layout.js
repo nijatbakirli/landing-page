@@ -1,10 +1,9 @@
 import React from "react";
-import PropTypes from "prop-types";
 import { StaticQuery, graphql } from "gatsby";
 import { HelmetDatoCms } from "gatsby-source-datocms";
 
 import "../styles/default.css"
-import "../styles/case1.css"
+import "../styles/app.css"
 
 const TemplateWrapper = ({ children }) => {
 
@@ -55,10 +54,6 @@ const TemplateWrapper = ({ children }) => {
       )}
     />
   );
-};
-
-TemplateWrapper.propTypes = {
-  children: PropTypes.object
 };
 
 export default TemplateWrapper;

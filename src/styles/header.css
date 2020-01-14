@@ -1,9 +1,13 @@
+.fragment {
+  position: absolute;
+  bottom: 0px;
+}
+
 #header_fragment1
 {
-    clip-path: polygon(0% 0%, 0% 0%, 0% 110%, 0% 110%);
-    -webkit-animation: frag1type 18s linear 0s infinite;
+  clip-path: polygon(0% 0%, 0% 0%, 0% 110%, 0% 110%);
+  -webkit-animation: frag1type 18s linear 0s infinite;
   animation: frag1type 18s linear 0s infinite;
-  position: absolute;
 }
 @keyframes frag1type{
   from {clip-path: polygon(0% 0%, 0% 0%, 0% 110%, 0% 110%); display: block;}
@@ -13,16 +17,16 @@
 }
 
 @-webkit-keyframes frag1type{
-    from {clip-path: polygon(0% 0%, 0% 0%, 0% 110%, 0% 110%); display: block;}
-    24%{clip-path: polygon(0% 0%, 100% 0%, 100% 110%, 0% 110%);display: block;}
-    33%{clip-path: polygon(0% 0%, 0% 0%, 0% 110%, 0% 110%);display: none;}
-    100%{clip-path: polygon(0% 0%, 0% 0%, 0% 110%, 0% 110%);display: none;}
+  from {clip-path: polygon(0% 0%, 0% 0%, 0% 110%, 0% 110%); display: block;}
+  24%{clip-path: polygon(0% 0%, 100% 0%, 100% 110%, 0% 110%);display: block;}
+  33%{clip-path: polygon(0% 0%, 0% 0%, 0% 110%, 0% 110%);display: none;}
+  100%{clip-path: polygon(0% 0%, 0% 0%, 0% 110%, 0% 110%);display: none;}
 }
   
 #header_fragment2
 {
-    clip-path: polygon(0% 0%, 0% 0%, 0% 110%, 0% 110%);
-    -webkit-animation: frag2type 18s linear 6s infinite;
+  clip-path: polygon(0% 0%, 0% 0%, 0% 110%, 0% 110%);
+  -webkit-animation: frag2type 18s linear 6s infinite;
   animation: frag2type 18s linear 6s infinite;
   position: absolute;
 }
@@ -42,8 +46,8 @@
   
 #header_fragment3
 {
-    clip-path: polygon(0% 0%, 0% 0%, 0% 110%, 0% 110%);
-    -webkit-animation: frag3type 18s linear 12s infinite;
+  clip-path: polygon(0% 0%, 0% 0%, 0% 110%, 0% 110%);
+  -webkit-animation: frag3type 18s linear 12s infinite;
   animation: frag3type 18s linear 12s infinite;
   position: absolute;
 }

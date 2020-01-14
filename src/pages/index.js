@@ -27,14 +27,14 @@ const IndexPage = ({ data }) => (
     </div>
     <div
       className="section4"
-      style={{ background: `url(${shapeImage})`, backgroundSize: "cover", backgroundPositionX: "center", backgroundPositionY: "bottom" }}
+      style={{ background: `url(${shapeImage})`, backgroundSize: "cover", backgroundPositionX: "center", backgroundPositionY: "bottom", position: 'relative' }}
     >
       <Case1 />
     </div>
     <div className="section5" style={{ background: "#92D6D0" }}>
       <Case2 />
     </div>
-    <div className="section6" style={{ background: "#FF4876" }}>
+    <div className="section6" style={{ position: 'relative', background: "#FF4876", zIndex: 3, }}>
       <Case3 />
     </div>
     <div className="cts">
