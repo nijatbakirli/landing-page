@@ -5,12 +5,15 @@ import rectangle from "../images/Rectangle.png";
 import oval from "../images/Oval.png";
 import sampleVideo from "../images/sample.mp4";
 import lineImage from "../images/Line2.png";
+import useVPagination from "./slide";
 
 const Case2 = () => {
   const phoneRect = usePhoneRect("videoPlayer");
+  useVPagination("landing2");
 
   return (
-    <div
+    <div id="landing2" style={{ position: "relative" }}>
+      <div
       className="landing1"
       style={{
         display: "flex",
@@ -124,6 +127,7 @@ const Case2 = () => {
           />
         </div>
       </div>
+    </div>
     </div>
   );
 };

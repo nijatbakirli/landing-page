@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
 import iPhoneImage from "../images/iPhones.png";
 import lineImage from "../images/Line.png";
+import useVPagination from "./slide";
 
 const Case1 = () => {
   const iPhoneLeft = useIPhoneLeft("iPhoneImg");
+  useVPagination("landing1");
 
   return (
     <div id="landing1" style={{ position: "relative" }}>
@@ -82,7 +84,9 @@ const useRect = id => {
   useEffect(() => {
     let dom = document.getElementById(id);
     var rect = dom.getBoundingClientRect();
-    const handleScroll = () => setRect(rect);
+    const handleScroll = () => {
+      setRect(rect);
+    }
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
